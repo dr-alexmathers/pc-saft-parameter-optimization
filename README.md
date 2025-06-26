@@ -10,7 +10,7 @@ This repository contains Python scripts that implement the parameter-fitted PC-S
 
 ## 🛠 Usage
 1. Clone this repository
-2. Place `Input_ASD.inp` and `Exp_data_SLE.dat` in the PC-SAFT program folder
+2. Place `Input_ASD_template.inp` and `Exp_data_SLE.dat` in the PC-SAFT program folder
 3. Run scripts with Python 3.x
 
 ## 🧰 Dependencies
