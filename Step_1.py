@@ -80,12 +80,12 @@ if not base_directory:
 base_directory = base_directory.rstrip(os.sep) + os.sep
 
 # File paths now relative to the base directory
-ranges_variables_file_path = r"D:\PC-SAFT_programs\PC-SAFT_parameter_optimizer\ranges_variables.txt"
-generated_datasets_path = r"D:\PC-SAFT_programs\PC-SAFT_parameter_optimizer\generated_PC-SAFT_datasets"
-generated_inp_files_path = r"D:\PC-SAFT_programs\PC-SAFT_parameter_optimizer\generated_inp_files"
-generated_RMSRD_values_path = r"D:\PC-SAFT_programs\PC-SAFT_parameter_optimizer\generated_RMSRD_values"
-pc_saft_folder = r"D:\PC-SAFT_programs\PC-SAFT_parameter_optimizer"
-executable_path = r"D:\PC-SAFT_programs\PC-SAFT_parameter_optimizer\PC_SAFT_ASD_v2022.12.exe"
+ranges_variables_file_path = os.path.join(base_directory, "ranges_variables.txt")
+generated_datasets_path = os.path.join(base_directory, "generated_PC-SAFT_datasets")
+generated_inp_files_path = os.path.join(base_directory, "generated_inp_files")
+generated_RMSRD_values_path = os.path.join(base_directory, "generated_RMSRD_values")
+pc_saft_folder = base_directory
+executable_path = os.path.join(base_directory, "PC_SAFT_ASD_v2022.12.exe")
 
 # Print paths for verification
 print(f"Ranges variables file: {ranges_variables_file_path}")
