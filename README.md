@@ -74,6 +74,8 @@ The workflow has **two steps**:
 1. **Input requirements**
    - `initial_dataset.txt` in each drug–polymer folder  
      ```
+     maxiter = 5
+     
      A* = <value>
      B* = <value>
      C* = <value>
@@ -82,7 +84,6 @@ The workflow has **two steps**:
      F* = <value>
      G* = <value>
      H* = <value>
-     maxiter = 200   # optional, default = 100
      ```
    - Same template and experimental files as Step 1.  
 
@@ -204,29 +205,31 @@ project/
 
 **ranges_variables.txt**
 ```txt
-A_range = (0.5, 2.0)
-B_range = (0.1, 1.0)
-C_range = (0.0, 5.0)
-D_range = (0.0, 5.0)
-E_range = (0.0, 5.0)
-F_range = (0.0, 5.0)
-G_range = (0.0, 5.0)
-H_range = (0.0, 5.0)
-num_datasets = 50
-maxiter = 100
+num_datasets = 20
+maxiter = 5
+
+A_range = (0.01070, 0.04980)
+B_range = (2.65800, 4.76700)
+C_range = (151.60000, 470.92000)
+D_range = (516.46910, 2181.90000)
+E_range = (0.00952, 0.08946)
+F_range = (0.03130, 0.05400)
+G_range = (2.71000, 3.12000)
+H_range = (205.00000, 298.04700)
 ```
 
 **initial_dataset.txt**
 ```txt
-A* = 1.2
-B* = 0.5
-C* = 2.3
-D* = 1.8
-E* = 0.9
-F* = 3.1
-G* = 4.0
-H* = 0.7
-maxiter = 200
+maxiter = 5
+
+A* = 0.029245
+B* = 4.828732
+C* = 369.810362
+D* = 725.570054
+E* = 0.050751
+F* = 0.049463
+G* = 2.852088
+H* = 250.534061
 ```
 
 ---
